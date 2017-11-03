@@ -26,7 +26,7 @@ public class UserController {
         return userService.getAll();
     }
 
-    @PostMapping(value="/users", consumes = MediaType.APPLICATION_XML_VALUE)
+    @PostMapping(value="/users")
     public void addUser(@RequestBody User user){
         userService.addUser(user);
 

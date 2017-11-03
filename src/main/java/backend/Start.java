@@ -22,7 +22,7 @@ public class Start implements CommandLineRunner{
     @Override
     public void run(String... args) throws Exception {
         User u1 = new User("mock1", "testFirstname", "testLastname");
-        User u2 = new User("mock1", "testFirstname", "testLastname");
+        User u2 = new User("mock2", "testFirstname", "testLastname");
         userService.addUser(u1);
         userService.addUser(u2);
 
